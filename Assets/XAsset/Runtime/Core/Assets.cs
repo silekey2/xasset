@@ -121,7 +121,7 @@ namespace libx
             }
 
             path = GetExistPath(path);
-            var asset = new SceneAssetRequestAsync(path, additive);
+            var asset = new SceneAssetRequest(path, additive);
             if (! additive)
             {
                 if (_runningScene != null)
